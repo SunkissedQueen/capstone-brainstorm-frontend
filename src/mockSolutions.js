@@ -23,6 +23,14 @@ const mockSolutions = [
     require_followup: false,
     attempted: false,
     acceptable: true
+  },{
+    id: 4,
+    blocker_id: 4,
+    user_id: 3,
+    description: 'Hopefully, it is not still occurring. Ctrl + C',
+    require_followup: false,
+    attempted: false,
+    acceptable: true
   }
 ]
 

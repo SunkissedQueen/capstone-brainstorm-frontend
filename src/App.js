@@ -17,14 +17,15 @@ export default function App() {
   const [blockers, setBlockers] = useState(mockBlockers) 
   const [solutions, setSolutions] = useState(mockSolutions) 
 
-  console.log("currentUser: ", currentUser)
-  console.log("blockers: ", blockers)
-  console.log("solutions: ", solutions)
-
   return(
     <>
       <Header />
       <h1>Ask Aunty!</h1>
+      <UserDashBoard 
+        currentUser={currentUser}
+        blockers={blockers}
+        solutions={solutions}
+      />
       <Footer />
     </>
   )
