@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import mockUsers from './mockUsers';
+import mockBlockers from './mockBlockers';
+import mockSolutions from './mockSolutions';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import BlockerIndex from './pages/BlockerIndex';
+import BlockerShow from './pages/BlockerShow';
+import BlockerNew from './pages/BlockerNew';
+import BlockerEdit from './pages/BlockerEdit';
+import UserDashBoard from './pages/UserDashBoard';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+
+  const [currentUser, setCurrentUser] = useState(mockUsers[2]) 
+  const [blockers, setBlockers] = useState(mockBlockers) 
+  const [solutions, setSolutions] = useState(mockSolutions) 
+
+  console.log("currentUser: ", currentUser)
+  console.log("blockers: ", blockers)
+  console.log("solutions: ", solutions)
+
+  return(
+    <>
+      <Header />
+      <h1>Ask Aunty!</h1>
+      <Footer />
+    </>
+  )
 }
-
-export default App;
