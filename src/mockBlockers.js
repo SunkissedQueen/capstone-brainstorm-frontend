@@ -17,6 +17,12 @@ const mockBlockers = [
     blocker_description: 'Should I go to the family dinner or dinner with friends?',
     resolved: false,
     urgent: true
+  },{
+    id: 4,
+    category: 'coding',
+    blocker_description: 'How do you stop a stack overflow?',
+    resolved: false,
+    urgent: true
   }
 ]
 
